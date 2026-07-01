@@ -1,0 +1,27 @@
+{
+  "TWILIO_ACCOUNT_SID": "ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "TWILIO_AUTH_TOKEN": "your_twilio_auth_token",
+  "TWILIO_PHONE_NUMBER": "+15551234567",
+  "CONTACT_CENTER_PHONE_NUMBER": "+15557654321",
+  "CUSTOMER_AUDIO_DELAY_SECONDS": 0.8,
+  "KEEP_BROWSER_OPEN": false,
+  "WRAP_UP_MODE": "auto",
+  "AUDIO_WAV_FILES": [],
+  "AGENT_DESKTOP_URL": "https://desktop.wxcc-us1.cisco.com/",
+  "S3_BUCKET": "your-s3-bucket-name",
+  "S3_REGION": "us-east-1",
+  "S3_PREFIX": "audio-uploads/",
+  "AGENT_AUDIO_ASSIGNMENTS": [
+    {
+      "agent": {
+        "role": "Agent",
+        "email": "agent+eu2ag1@example.com",
+        "password": "your_agent_password",
+        "extension": "1000"
+      },
+      "audio_wav_files": [
+        "audio/fast-food-order.wav"
+      ]
+    }
+  ]
+}

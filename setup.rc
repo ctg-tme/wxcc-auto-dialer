@@ -1,0 +1,27 @@
+# Setup configuration for Python project with Playwright
+# This is an RC file and MUST be sourced, not executed
+# Usage: source setup.rc
+#        or
+#        . setup.rc
+
+# Create venv if it doesn't exist
+echo "[setup.sh] Checking for venv..."
+if [ ! -d ".venv" ]; then
+  echo "[setup.sh] Creating virtual environment..."
+  python3 -m venv .venv
+fi
+
+# Activate venv
+echo "[setup.sh] Activating virtual environment..."
+source .venv/bin/activate
+
+# Install requirements
+echo "[setup.sh] Installing Python dependencies..."
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# Install Playwright browsers
+echo "[setup.sh] Installing Playwright browsers..."
+python -m playwright install
+
+echo "[setup.sh] Setup complete!"

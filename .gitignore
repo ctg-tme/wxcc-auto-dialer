@@ -1,0 +1,11 @@
+**/__pycache__/
+.venv/
+.nx/
+.yarn/
+node_modules/
+packages/
+config/config.json
+audio/split-files/
+audio/october-2025/
+audio/sept-2025/
+.DS_Store

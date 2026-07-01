@@ -1,0 +1,26 @@
+# Checkout text files with lf by default.
+* text=auto eol=lf
+
+# Checkout with CRLF line endings.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binaries that shouldn't be modified.
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.avi binary
+*.pdf binary
+*.wav binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.exe binary
+*.dll binary
